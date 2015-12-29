@@ -1,8 +1,9 @@
-# docker-jrebel-license-server
-Jrebel License Server running in docker container
-
 # Docker JRebel License Server
-Docker image for running JRebel License Server - http://manuals.zeroturnaround.com/license-server/
+JRebel License Server running in docker container
+
+More info about JRebel License Server 
+* http://manuals.zeroturnaround.com/license-server/ 
+* http://zeroturnaround.com/software/license-server/quick-start/#!/installation
 
 ## Usage
 Run with ```docker run -p 9000:9000 borgeorgiev/docker-jrebel-license-server```
