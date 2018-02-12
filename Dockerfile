@@ -1,11 +1,11 @@
-FROM java:7
+FROM openjdk:8-jre
 
 MAINTAINER Boris Georgiev <boris.georgiev@botronsoft.com>
 
-ENV VERSION="3.1.5"
+ENV VERSION="3.3.9"
 RUN mkdir /jrebel
 
-RUN wget -O /tmp/license-server.zip -q "http://dl.zeroturnaround.com/license-server/license-server-${VERSION}.zip"
+RUN wget -O /tmp/license-server.zip -q "https://dl.zeroturnaround.com/license-server/releases/license-server-${VERSION}.zip"
 RUN unzip -u -o /tmp/license-server.zip -d /jrebel
 
 EXPOSE 9000
